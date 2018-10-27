@@ -1,0 +1,13 @@
+{
+    "env": {
+        "mocha": true,
+        "node": true
+    },
+    "extends": "standard",
+    "globals": {
+        "expect": false
+    },
+    "rules": {
+        "no-unused-expressions": 0
+    }
+}
