@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/karma-runner/karma-docker-launcher.git"
+    "url": "git://github.com/rkuzsma/karma-docker-launcher.git"
   },
   "keywords": [
     "karma-plugin",

@@ -4,7 +4,7 @@ const spawnargs = require('spawn-args')
 function execute (command, log) {
   const chunks = []
   const tokens = command.split(/\s/)
-  log.info(`Running: '${ command }'`);
+  log.info(`Running: '${command}'`)
   const shell = spawn(tokens.shift(), spawnargs(tokens.join(' '), { removequotes: 'always' }))
 
   shell.stderr.on('readable', () => {
@@ -38,8 +38,8 @@ function execute (command, log) {
   })
 };
 
-function isLooksLikeContainerId(str) {
-  return /^[a-fA-F0-9]+$/.test(str);
+function isLooksLikeContainerId (str) {
+  return /^[a-fA-F0-9]+$/.test(str)
 }
 
 function DockerBrowser (args, baseBrowserDecorator, logger) {
@@ -57,7 +57,7 @@ function DockerBrowser (args, baseBrowserDecorator, logger) {
       .catch(() => {
         log.error(`Failed to stop Docker browser with command: ${stopCmd}`)
         done()
-      });
+      })
   })
 
   this.on('start', (url) => {
@@ -79,11 +79,10 @@ function DockerBrowser (args, baseBrowserDecorator, logger) {
     return execute(startCmd, log)
       .then((result) => {
         if (isLooksLikeContainerId(result.trim())) {
-          containerId = result.trim();
-          log.info(`Launched Docker container: ${ containerId }`)
-        }
-        else {
-          log.error(`Unexpected response when launching Docker container: ${ result }`);
+          containerId = result.trim()
+          log.info(`Launched Docker container: ${containerId}`)
+        } else {
+          log.error(`Unexpected response when launching Docker container: ${result}`)
         }
       })
       .catch((err) => {
