@@ -23,6 +23,12 @@ $ npm install karma-docker-launcher --save-dev
 // karma.conf.js
 module.exports = function(config) {
   config.set({
+    plugins: [
+      // Karma automatically require()s packages that start with karma-*,
+      // but it does not recognize scoped packages, so we must be explicit.
+      '@rkuzsma/karma-docker-launcher',
+      'karma-*'
+    ],
     browsers: [
       'DockerFirefoxHeadless',
       'DockerChromeHeadless'

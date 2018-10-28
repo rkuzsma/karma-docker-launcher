@@ -1,1 +1,5 @@
 node_modules
+test
+config
+Gruntfile.js
+package-lock.json
