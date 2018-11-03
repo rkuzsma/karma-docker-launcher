@@ -1,9 +1,9 @@
 # karma-docker-launcher
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/feross/standard)
- [![npm version](https://img.shields.io/npm/v/karma-docker-launcher.svg?style=flat-square)](https://www.npmjs.com/package/karma-docker-launcher) [![npm downloads](https://img.shields.io/npm/dm/karma-docker-launcher.svg?style=flat-square)](https://www.npmjs.com/package/karma-docker-launcher)
+ [![npm version](https://img.shields.io/npm/v/@rkuzsma/karma-docker-launcher.svg?style=flat-square)](https://www.npmjs.com/package/@rkuzsma/karma-docker-launcher) [![npm downloads](https://img.shields.io/npm/dm/@rkuzsma/karma-docker-launcher.svg?style=flat-square)](https://www.npmjs.com/package/@rkuzsma/karma-docker-launcher)
 
-[![Build Status](https://img.shields.io/travis/karma-runner/karma-docker-launcher/master.svg?style=flat-square)](https://travis-ci.org/karma-runner/karma-docker-launcher) [![Dependency Status](https://img.shields.io/david/karma-runner/karma-docker-launcher.svg?style=flat-square)](https://david-dm.org/karma-runner/karma-docker-launcher) [![devDependency Status](https://img.shields.io/david/dev/karma-runner/karma-docker-launcher.svg?style=flat-square)](https://david-dm.org/karma-runner/karma-docker-launcher#info=devDependencies)
+[![Build Status](https://img.shields.io/travis/rkuzsma/karma-docker-launcher/master.svg?style=flat-square)](https://travis-ci.org/rkuzsma/karma-docker-launcher) [![Dependency Status](https://img.shields.io/david/rkuzsma/karma-docker-launcher.svg?style=flat-square)](https://david-dm.org/rkuzsma/karma-docker-launcher) [![devDependency Status](https://img.shields.io/david/dev/rkuzsma/karma-docker-launcher.svg?style=flat-square)](https://david-dm.org/rkuzsma/karma-docker-launcher#info=devDependencies)
 
 > Docker image launcher for [Karma](https://github.com/karma-runner/karma)
 
