@@ -1,16 +1,18 @@
-sudo: false
+before_install: npm install npm@latest --global
+cache:
+  directories:
+  - "$HOME/.npm"
+install: npm ci || (rm -rf node_modules && npm install)
 language: node_js
 node_js:
-  - 4
-  - 6
-  - stable
-
-# Make sure we have new NPM.
-before_install:
-  - npm install -g npm
-
-before_script:
-  - npm install -g grunt-cli
-
-script:
-  - grunt
+- 8
+- 10
+sudo: false
+deploy:
+  provider: npm
+  email: rkuzsma@gmail.com
+  api_key:
+    secure: UXJsB7cphvXoKnl6sJNUf2QZtlI7XcnuhKvnVu6Au7keq60jd2z3wxtnqDEH+g+K65v0b0CvQXzJRTKHcRnzhlsDPZFrsW7dtjq9REesYGxuMISCyR6qI2d7wOMcjf8AHArf3J3sgBRvWRC0mf3gAsCCugX9MYiRcfZuvDYMYvyV2UqIfHA+f25jpycauhHDHUG7v1UZrufy02v3mbba0TAfgzwicKCmzL6a2uTe7ghOjnaIWpwUDt8d2+FKbcw8UzTufCP/5RRxN696ArCAjIZ7MOtYqwbFCRg5CmD3eogDSxQ+RUEDByuHT5dYMX6EmvCg3iZA/lCi0YJ+ATi5D68nhcXXOkun50vmqGGkb/Cn/WjTMmG97z3Tyo8lE8MWKZA3im1NvvwGvbiVtNmj2y7WMnWii0HKc3AwlXEu80+BvjI8LZ9pVK6Po7Xx2OC/q3MX0S3eRWx633FN2OMEiWfKLNDLRnzJCWSQyS2y3HPEW3L5yGKNjBDbDbEmx9zwn+LlY/dVn+T5ufQ9TRZqT+qppQNzamWAmbxf2DAyWggVsy+AU2oPIV9Bd9XcHJ00/Ejegz99YCcUg4YTiUNSQckp1CWevXbArHEKXQgjlx+lTvErMTztJikUtmhxrRU+rwv4cj4XyBvxlolSnNK2ZrTvPdgxoGkTeKeDkqfJUOc=
+  on:
+    tags: true
+    repo: rkuzsma/karma-docker-launcher
