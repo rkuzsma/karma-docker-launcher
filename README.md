@@ -14,7 +14,7 @@ This plugin allows you to use any Docker image containing a browser as a browser
 Install using
 
 ```bash
-$ npm install karma-docker-launcher --save-dev
+$ npm install @rkuzsma/karma-docker-launcher --save-dev
 ```
 
 ## Configuration
