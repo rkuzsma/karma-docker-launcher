@@ -1,6 +1,6 @@
 {
   "name": "@rkuzsma/karma-docker-launcher",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Karma plugin. Launcher for browsers in Docker images.",
   "main": "src/index.js",
   "scripts": {
