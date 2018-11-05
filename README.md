@@ -36,8 +36,8 @@ module.exports = function(config) {
     customLaunchers: {
       DockerFirefoxHeadless: {
         base: 'Docker',
-        // Use your favorite Firefox headless image, e.g. https://github.com/rkuzsma/docker-headless-browsers
-        image: 'firefox-headless:latest'
+        // Use your favorite Firefox headless image, e.g.:
+        image: 'rkuzsma/firefox-headless-stable:latest'
         containerCommand: 'firefox ' +
           '-p headless ' +
           '-no-remote ' +
